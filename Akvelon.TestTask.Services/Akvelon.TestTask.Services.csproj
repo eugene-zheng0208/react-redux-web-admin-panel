@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helpers\**" />
+    <EmbeddedResource Remove="Helpers\**" />
+    <None Remove="Helpers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Akvelon.TestTask.DataAccessLayer\Akvelon.TestTask.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\Akvelon.TestTask.DataTransferObjects\Akvelon.TestTask.DataTransferObjects.csproj" />
+    <ProjectReference Include="..\Akvelon.TestTask.Repositories\Akvelon.TestTask.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

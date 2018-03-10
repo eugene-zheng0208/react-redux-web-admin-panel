@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Akvelon.TestTask.DataAccessLayer\Akvelon.TestTask.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\Akvelon.TestTask.Repositories\Akvelon.TestTask.Repositories.csproj" />
+    <ProjectReference Include="..\Akvelon.TestTask.Services\Akvelon.TestTask.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+  </ItemGroup>
+
+</Project>
